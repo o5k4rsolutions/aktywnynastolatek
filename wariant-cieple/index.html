@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Aktywny Nastolatek</title>
+<title>Aktywny Nastolatek — ruch, dobra energia i czysta głowa</title>
 <meta name="description" content="Strona o ruchu i zdrowym spędzaniu czasu dla nastolatków: pomysły na aktywność bez presji na wyniki.">
-<meta name="theme-color" content="#1d4ed8">
+<meta name="theme-color" content="#c2410c">
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
 tailwind.config = {
@@ -13,10 +13,10 @@ tailwind.config = {
     extend: {
       fontFamily: { sans: ['Helvetica Neue','Helvetica','Arial','sans-serif'] },
       colors: {
-        ink: '#10172a',
-        cobalt: '#1d4ed8',
-        sun: '#ffd23f',
-        paper: '#f6f7fb'
+        ink: '#2a1a14',
+        brand: '#c2410c',
+        sun: '#ffc93c',
+        paper: '#fff4e6'
       }
     }
   }
@@ -25,21 +25,21 @@ tailwind.config = {
 <style>
   html { -webkit-text-size-adjust: 100%; }
   body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
-  :focus-visible { outline: 3px solid #ffd23f; outline-offset: 2px; }
-  .on-light :focus-visible { outline-color: #1d4ed8; }
+  :focus-visible { outline: 3px solid #ffc93c; outline-offset: 2px; }
+  .on-light :focus-visible { outline-color: #c2410c; }
   .hero-in { animation: heroIn .7s ease-out both; }
   @keyframes heroIn { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
   @media (prefers-reduced-motion: reduce) { .hero-in { animation: none; } html { scroll-behavior: auto; } }
-  .tab[aria-selected="true"] { background: #10172a; color: #fff; border-color: #10172a; }
+  .tab[aria-selected="true"] { background: #2a1a14; color: #fff; border-color: #2a1a14; }
   section[id] { scroll-margin-top: 4.5rem; }
 </style>
 </head>
 <body class="bg-white text-ink antialiased">
 
-<header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-slate-200" style="padding-top: env(safe-area-inset-top, 0px)">
+<header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-stone-200" style="padding-top: env(safe-area-inset-top, 0px)">
   <div class="max-w-6xl mx-auto px-5 h-16 flex items-center justify-between">
     <a href="#" class="flex items-center gap-2.5" aria-label="Aktywny Nastolatek — strona główna">
-      <svg class="w-9 h-9 text-cobalt shrink-0" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <svg class="w-9 h-9 text-brand shrink-0" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
         <path d="M6 54h52" />
         <circle cx="30" cy="12" r="6" fill="currentColor" stroke="none" />
         <path d="M30 20l-5 14" />
@@ -48,13 +48,13 @@ tailwind.config = {
         <path d="M25 34l-8 9 2 7" />
         <path d="M25 34l12 6 5-6" />
       </svg>
-      <span class="font-bold text-lg leading-tight tracking-tight">Aktywny<br class="sm:hidden"> <span class="text-cobalt">Nastolatek</span></span>
+      <span class="font-bold text-lg leading-tight tracking-tight">Aktywny<br class="sm:hidden"> <span class="text-brand">Nastolatek</span></span>
     </a>
 
-    <nav class="hidden md:flex items-center gap-8 text-[15px] font-medium text-slate-600" aria-label="Główna nawigacja">
-      <a href="#dlaczego" class="hover:text-cobalt">Dlaczego ruch</a>
-      <a href="#styl" class="hover:text-cobalt">Twój styl</a>
-      <a href="#dolacz" class="bg-cobalt text-white px-5 py-2.5 rounded-full font-bold hover:bg-blue-800">Dołącz</a>
+    <nav class="hidden md:flex items-center gap-8 text-[15px] font-medium text-stone-600" aria-label="Główna nawigacja">
+      <a href="#dlaczego" class="hover:text-brand">Dlaczego ruch</a>
+      <a href="#styl" class="hover:text-brand">Twój styl</a>
+      <a href="#dolacz" class="bg-brand text-white px-5 py-2.5 rounded-full font-bold hover:bg-orange-800">Dołącz</a>
     </nav>
 
     <button id="menuBtn" class="md:hidden w-11 h-11 -mr-2 flex items-center justify-center rounded-full" aria-label="Otwórz menu" aria-expanded="false" aria-controls="mobileMenu">
@@ -63,24 +63,24 @@ tailwind.config = {
     </button>
   </div>
 
-  <nav id="mobileMenu" class="md:hidden hidden border-t border-slate-200 bg-white" aria-label="Menu mobilne">
+  <nav id="mobileMenu" class="md:hidden hidden border-t border-stone-200 bg-white" aria-label="Menu mobilne">
     <div class="px-5 py-3 flex flex-col text-lg font-medium">
-      <a href="#dlaczego" class="py-3 border-b border-slate-100">Dlaczego ruch</a>
-      <a href="#styl" class="py-3 border-b border-slate-100">Twój styl</a>
-      <a href="#dolacz" class="mt-4 mb-2 bg-cobalt text-white text-center font-bold py-3.5 rounded-full">Dołącz</a>
+      <a href="#dlaczego" class="py-3 border-b border-stone-100">Dlaczego ruch</a>
+      <a href="#styl" class="py-3 border-b border-stone-100">Twój styl</a>
+      <a href="#dolacz" class="mt-4 mb-2 bg-brand text-white text-center font-bold py-3.5 rounded-full">Dołącz</a>
     </div>
   </nav>
 </header>
 
 <main>
 
-<section class="bg-cobalt text-white overflow-hidden">
+<section class="bg-brand text-white overflow-hidden">
   <div class="max-w-6xl mx-auto px-5 pt-10 pb-0 md:pt-14 md:pb-0 grid md:grid-cols-2 gap-10 md:gap-14 items-end">
     <div class="hero-in pb-2 md:pb-14">
       <h1 class="text-[2.6rem] leading-[1.02] sm:text-6xl font-bold tracking-tight">
         Po lekcjach wyjdź z domu. Poruszaj się, jak lubisz.
       </h1>
-      <p class="mt-6 text-lg sm:text-xl text-blue-100 leading-relaxed max-w-md">
+      <p class="mt-6 text-lg sm:text-xl text-orange-100 leading-relaxed max-w-md">
         Bez ocen i bez rywalizacji. Pół godziny ruchu dziennie pomaga się skupić, lepiej spać i spędzić czas ze znajomymi.
       </p>
       <div class="mt-8 flex flex-col sm:flex-row gap-3">
@@ -101,17 +101,17 @@ tailwind.config = {
   <div class="max-w-6xl mx-auto px-5">
     <h2 class="text-3xl sm:text-4xl font-bold tracking-tight leading-tight">Dlaczego warto się ruszać</h2>
     <div class="mt-8 grid md:grid-cols-3 gap-8 md:gap-10">
-      <article class="border-t-4 border-cobalt pt-4">
+      <article class="border-t-4 border-brand pt-4">
         <h3 class="text-xl font-bold">Czysta głowa</h3>
-        <p class="mt-2 text-slate-600 leading-relaxed">Po dniu przed ekranem mózg jest zmęczony. Wyjście na dwór poprawia koncentrację i nastrój.</p>
+        <p class="mt-2 text-stone-600 leading-relaxed">Po dniu przed ekranem mózg jest zmęczony. Wyjście na dwór poprawia koncentrację i nastrój.</p>
       </article>
-      <article class="border-t-4 border-cobalt pt-4">
+      <article class="border-t-4 border-brand pt-4">
         <h3 class="text-xl font-bold">Bez spinki</h3>
-        <p class="mt-2 text-slate-600 leading-relaxed">Nie musisz biegać maratonów. Taniec, rower, rolki albo szybki spacer też się liczą.</p>
+        <p class="mt-2 text-stone-600 leading-relaxed">Nie musisz biegać maratonów. Taniec, rower, rolki albo szybki spacer też się liczą.</p>
       </article>
-      <article class="border-t-4 border-cobalt pt-4">
+      <article class="border-t-4 border-brand pt-4">
         <h3 class="text-xl font-bold">Lepszy czas z ekipą</h3>
-        <p class="mt-2 text-slate-600 leading-relaxed">Mecz albo spacer po parku zbliża bardziej niż wspólne scrollowanie w osobnych pokojach.</p>
+        <p class="mt-2 text-stone-600 leading-relaxed">Mecz albo spacer po parku zbliża bardziej niż wspólne scrollowanie w osobnych pokojach.</p>
       </article>
     </div>
   </div>
@@ -120,19 +120,19 @@ tailwind.config = {
 <section id="styl" class="bg-paper py-12 md:py-16 on-light">
   <div class="max-w-6xl mx-auto px-5">
     <h2 class="text-3xl sm:text-5xl font-bold tracking-tight leading-tight">Jaki ruch Ci odpowiada?</h2>
-    <p class="mt-4 text-lg text-slate-600">Wybierz jedną opcję i zobacz, jak zacząć jeszcze dziś.</p>
+    <p class="mt-4 text-lg text-stone-600">Wybierz jedną opcję i zobacz, jak zacząć jeszcze dziś.</p>
 
     <div class="mt-6 flex flex-wrap gap-2.5" role="tablist" aria-label="Rodzaje ruchu">
-      <button class="tab px-5 py-3 rounded-full border-2 border-slate-300 bg-white font-bold text-[15px]" role="tab" aria-selected="true" data-i="0">Deska i rolki</button>
-      <button class="tab px-5 py-3 rounded-full border-2 border-slate-300 bg-white font-bold text-[15px]" role="tab" aria-selected="false" data-i="1">Gry zespołowe</button>
-      <button class="tab px-5 py-3 rounded-full border-2 border-slate-300 bg-white font-bold text-[15px]" role="tab" aria-selected="false" data-i="2">Spacer z muzyką</button>
-      <button class="tab px-5 py-3 rounded-full border-2 border-slate-300 bg-white font-bold text-[15px]" role="tab" aria-selected="false" data-i="3">Street workout</button>
+      <button class="tab px-5 py-3 rounded-full border-2 border-stone-300 bg-white font-bold text-[15px]" role="tab" aria-selected="true" data-i="0">Deska i rolki</button>
+      <button class="tab px-5 py-3 rounded-full border-2 border-stone-300 bg-white font-bold text-[15px]" role="tab" aria-selected="false" data-i="1">Gry zespołowe</button>
+      <button class="tab px-5 py-3 rounded-full border-2 border-stone-300 bg-white font-bold text-[15px]" role="tab" aria-selected="false" data-i="2">Spacer z muzyką</button>
+      <button class="tab px-5 py-3 rounded-full border-2 border-stone-300 bg-white font-bold text-[15px]" role="tab" aria-selected="false" data-i="3">Street workout</button>
     </div>
 
-    <div id="panel" class="mt-6 bg-white rounded-3xl p-6 sm:p-10 border border-slate-200" role="tabpanel" aria-live="polite">
+    <div id="panel" class="mt-6 bg-white rounded-3xl p-6 sm:p-10 border border-stone-200" role="tabpanel" aria-live="polite">
       <h3 id="pTitle" class="text-2xl sm:text-3xl font-bold"></h3>
-      <p id="pText" class="mt-3 text-lg text-slate-600 leading-relaxed max-w-xl"></p>
-      <p class="mt-6 text-sm font-bold text-slate-500">Na start</p>
+      <p id="pText" class="mt-3 text-lg text-stone-600 leading-relaxed max-w-xl"></p>
+      <p class="mt-6 text-sm font-bold text-stone-500">Na start</p>
       <p id="pStart" class="mt-1 text-lg font-medium max-w-xl"></p>
     </div>
   </div>
@@ -141,12 +141,12 @@ tailwind.config = {
 <section id="dolacz" class="bg-ink text-white py-12 md:py-16">
   <div class="max-w-3xl mx-auto px-5">
     <h2 class="text-3xl sm:text-5xl font-bold tracking-tight leading-tight">Dołącz do Aktywnego Nastolatka</h2>
-    <p class="mt-4 text-lg text-slate-300 leading-relaxed">Zostaw adres e-mail, a będziemy wysyłać pomysły na ruch, wyzwania i inspiracje na każdy tydzień. Bez spamu.</p>
+    <p class="mt-4 text-lg text-stone-300 leading-relaxed">Zostaw adres e-mail, a będziemy wysyłać pomysły na ruch, wyzwania i inspiracje na każdy tydzień. Bez spamu.</p>
 
     <form class="mt-8 flex flex-col sm:flex-row gap-3" onsubmit="event.preventDefault(); this.classList.add('hidden'); document.getElementById('formMsg').classList.remove('hidden');">
       <label for="email" class="sr-only">Twój adres e-mail</label>
       <input id="email" type="email" inputmode="email" autocomplete="email" required placeholder="Twój adres e-mail"
-             class="flex-1 bg-white text-ink placeholder-slate-500 rounded-full px-6 py-4 text-base focus:outline-none focus:ring-4 focus:ring-sun">
+             class="flex-1 bg-white text-ink placeholder-stone-500 rounded-full px-6 py-4 text-base focus:outline-none focus:ring-4 focus:ring-sun">
       <button type="submit" class="bg-sun text-ink font-bold rounded-full px-8 py-4 active:scale-[.98] transition">Zapisz mnie</button>
     </form>
     <p id="formMsg" class="hidden mt-8 text-lg font-medium text-sun" role="status">Dziękujemy, zapisaliśmy Twój adres. Do usłyszenia!</p>
@@ -155,7 +155,7 @@ tailwind.config = {
 
 </main>
 
-<footer class="bg-ink text-slate-400 text-sm text-center px-5 pt-6 border-t border-white/10" style="padding-bottom: calc(1.5rem + env(safe-area-inset-bottom, 0px))">
+<footer class="bg-ink text-stone-400 text-sm text-center px-5 pt-6 border-t border-white/10" style="padding-bottom: calc(1.5rem + env(safe-area-inset-bottom, 0px))">
   © 2026 Aktywny Nastolatek
 </footer>
 
